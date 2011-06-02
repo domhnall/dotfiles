@@ -79,7 +79,7 @@ map <left> :bp<cr>
 " => Cope
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Do :help cope if you are unsure what cope is. It's super useful!
-map <leader>cc :bo cope<cr>
+map <leader>cw :bo cope<cr>
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
 
@@ -157,8 +157,23 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color railscasts+
+" color railscasts+
+set background=light
+colorscheme solarized
 
+function! ToggleBackground()
+  if (g:solarized_style=="dark")
+    let g:solarized_style="light"
+    colorscheme solarized
+  else
+    let g:solarized_style="dark"
+    colorscheme solarized
+  endif
+endfunction
+command! Togbg call ToggleBackground()
+nnoremap <F5> :call ToggleBackground()<CR>
+inoremap <F5> <ESC>:call ToggleBackground()<CR>a
+vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 "Directories for swp files
 set backupdir=~/.vim/backup
