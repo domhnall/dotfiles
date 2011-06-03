@@ -82,3 +82,6 @@
 [submodule "vim/bundle/bclose"]
 	path = vim/bundle/bclose
 	url = https://github.com/rwfitzge/vim-bclose.git
+[submodule "vim/bundle/repeat"]
+	path = vim/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git

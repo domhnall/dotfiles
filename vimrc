@@ -158,7 +158,7 @@ set modelines=10
 
 " Default color scheme
 " color railscasts+
-set background=light
+set background=dark
 colorscheme solarized
 
 function! ToggleBackground()
