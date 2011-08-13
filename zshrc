@@ -28,8 +28,8 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export EDITOR='mvim'
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export MANPATH="/usr/local/man:$MANPATH"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
 export JS_CMD=which node
 
