@@ -27,7 +27,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export EDITOR='mvim'
+export EDITOR='vim'
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"

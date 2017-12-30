@@ -19,6 +19,9 @@
 [submodule "vim/bundle/jslint"]
 	path = vim/bundle/jslint
 	url = git://github.com/hallettj/jslint.vim.git
+[submodule "vim/bundle/jshint"]
+	path = vim/bundle/jshint.vim
+  url = git@github.com:wookiehangover/jshint.vim.git
 [submodule "vim/bundle/markdown-preview"]
 	path = vim/bundle/markdown-preview
 	url = git://github.com/robgleeson/vim-markdown-preview.git
@@ -79,12 +82,12 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/bclose"]
-	path = vim/bundle/bclose
-	url = https://github.com/rwfitzge/vim-bclose.git
 [submodule "vim/bundle/repeat"]
 	path = vim/bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "vim-test"]
+	path = vim/bundle/vim-test
+  url = git@github.com:janko-m/vim-test.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
