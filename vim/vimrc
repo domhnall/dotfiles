@@ -142,6 +142,10 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Normal mode: <Leader>t
 map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
+" Opens an edit command with the path of the currently edited file filled in
+" Command mode: :E
+cmap E :e <C-R>=expand("%:p:h") . "/" <CR>
+
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
@@ -161,21 +165,7 @@ set modelines=10
 " Default color scheme
 " color railscasts+
 set background=dark
-colorscheme solarized
 
-function! ToggleBackground()
-  if (g:solarized_style=="dark")
-    let g:solarized_style="light"
-    colorscheme solarized
-  else
-    let g:solarized_style="dark"
-    colorscheme solarized
-  endif
-endfunction
-command! Togbg call ToggleBackground()
-nnoremap <F5> :call ToggleBackground()<CR>
-inoremap <F5> <ESC>:call ToggleBackground()<CR>a
-vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 "Directories for swp files
 set backupdir=~/.vim/backup
