@@ -88,6 +88,3 @@
 [submodule "vim-test"]
 	path = vim/bundle/vim-test
   url = git@github.com:janko-m/vim-test.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
